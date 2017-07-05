@@ -1,5 +1,5 @@
 // Convert the following pieces of Ruby code to JavaScript.
-
+//------------------------------------------------------------------------------
 // apples = 14
 // puts apples
 //
@@ -7,8 +7,7 @@
 var amount_of_apples = 14
 console.log("I have " + amount_of_apples + " apples.");
 
-
-
+//------------------------------------------------------------------------------
 // materials = ['wood', 'metal', 'stone']
 // words = {
 //   'elephant' => "The world's largest land mammal.",
@@ -22,8 +21,7 @@ var words = {
   iceCream: "A delicious milk-based dessert."
 }
 
-
-
+//------------------------------------------------------------------------------
 // num = 16
 // if num > 10
 //   puts "#{num} is greater than 10."
@@ -40,8 +38,7 @@ else if (num == 10)
 else
   console.log(num + " must be less than 10.");
 
-
-
+//------------------------------------------------------------------------------
 // 10.times do
 //   puts "Doing the same thing over and over."
 // end
@@ -50,8 +47,7 @@ for (var i = 1; i < 11; i++) {
 }
 // I chose 1-11 over 0-10 for output readability -Mike
 
-
-
+//------------------------------------------------------------------------------
 // base = 5
 // 20.times do |num|
 //   puts num + base
@@ -61,8 +57,7 @@ for (newNum = 0; newNum < 20 ; newNum++) {
   console.log(newNum + base)
 }
 
-
-
+//------------------------------------------------------------------------------
 // total = 0
 // 100.times do |num|
 //   total += num
@@ -73,10 +68,9 @@ var num = 1
 for (i = 0; i < 100; i++) {
   total += num
 }
-console.log(total)
+console.log(total);
 
-
-
+//------------------------------------------------------------------------------
 // (3..15).each do |height|
 //   if height > 9
 //     puts "You can get on the rollercoaster!"
@@ -84,9 +78,14 @@ console.log(total)
 //     puts "You are too short to ride this rollercoaster."
 //   end
 // end
+for (height = 3; height <= 15; height++) {
+  if (height > 9)
+    console.log('Your height is ' + height + '. You can ride this rollercoaster!');
+  else
+    console.log('Your height is ' + height + '. Maybe next summer, kid!');
+}
 
-
-
+//------------------------------------------------------------------------------
 // containers = ['purse', 'wallet', 'backback']
 // containers.each do |container|
 //   puts container
@@ -94,6 +93,7 @@ console.log(total)
 
 
 
+//------------------------------------------------------------------------------
 // def hello_world
 //   puts "Hello world!"
 // end
@@ -102,6 +102,7 @@ console.log(total)
 
 
 
+//------------------------------------------------------------------------------
 // def add(first_num, second_num)
 //   first_num + second_num
 // end
