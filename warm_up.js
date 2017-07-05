@@ -1,13 +1,11 @@
 // Convert the following pieces of Ruby code to JavaScript.
 
-
-
 // apples = 14
 // puts apples
 //
 // puts "I have #{apples} apples."
-
-
+var amount_of_apples = 14
+console.log("I have " + amount_of_apples + " apples.");
 
 // materials = ['wood', 'metal', 'stone']
 // words = {
@@ -15,8 +13,12 @@
 //   'school' => 'A place of learning.',
 //   'ice cream' => 'A delicious milk-based dessert.',
 // }
-
-
+var materials = ['wood', 'metal', 'stone'];
+var words = {
+  elephant: "The world's largest land mammal.",
+  school: "A place of learning.",
+  iceCream: "A delicious milk-based dessert."
+}
 
 // num = 16
 // if num > 10
