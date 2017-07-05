@@ -46,7 +46,7 @@ else
 //   puts "Doing the same thing over and over."
 // end
 for (var i = 1; i < 11; i++) {
-  console.log('Doing the same thing over and over. (' + [i] + ' times now)')
+  console.log('Doing the same thing over and over. (' + [i] + ' times now)');
 }
 // I chose 1-11 over 0-10 for output readability -Mike
 
@@ -56,7 +56,10 @@ for (var i = 1; i < 11; i++) {
 // 20.times do |num|
 //   puts num + base
 // end
-
+var base = 5
+for (newNum = 0; newNum < 20 ; newNum++) {
+  console.log(newNum + base)
+}
 
 
 
@@ -65,6 +68,12 @@ for (var i = 1; i < 11; i++) {
 //   total += num
 // end
 // puts total
+var total = 0
+var num = 1
+for (i = 0; i < 100; i++) {
+  total += num
+}
+console.log(total)
 
 
 
