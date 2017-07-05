@@ -43,7 +43,7 @@ function drive(car, cityDistance) {
 }
 
 function dropOffPassengers(car) {
-  previousPassengers == car.passengers;
+  var previousPassengers = car.passengers;
   car.passengers == 0;
   console.log('Dropped off ' + previousPassengers + ' passengers.');
 }
@@ -62,12 +62,12 @@ function act(car) {
 
   droveTo = drive(car, distanceBetweenCities);
   passengersDropped = dropOffPassengers(car);
-  console.log(droveTO + passengersDropped);
+  console.log(droveTo + passengersDropped);
 }
 
 function commandFleet(cars) {
   for (i=0; i <= cars.length; i++) {
-    var action = act(car);
+    var action = act(cars);
     console.log('Car ' + (i + 1) + ': ' + action);
   }
   console.log('---')
