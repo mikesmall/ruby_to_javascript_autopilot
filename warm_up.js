@@ -107,7 +107,6 @@ function helloWorld() {
 }
 helloWorld()
 
-
 //------------------------------------------------------------------------------
 // def add(first_num, second_num)
 //   first_num + second_num
@@ -115,3 +114,8 @@ helloWorld()
 //
 // amount = add(5, 7)
 // puts amount
+function add(firstNum, secondNum) {
+  return firstNum + secondNum
+}
+var testAdd = add(3, 5);
+console.log(testAdd);
