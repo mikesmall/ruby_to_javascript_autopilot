@@ -71,7 +71,7 @@ function act(car) {
 }
 
 function commandFleet(cars) {
-  for (i=0; i <= cars.length; i++) {
+  for (i=0; i < cars.length; i++) {
     var action = act(cars);
     console.log('Car ' + (i + 1) + ': ' + action);
   }
@@ -79,7 +79,7 @@ function commandFleet(cars) {
 }
 
 function addOneCarPerDay(cars, numDays) {
-  for (i=0; i <= numDays; i++) {
+  for (i=0; i < numDays; i++) {
     newCar = getNewCar;
     console.log(addCar);
     console.log(cars);
