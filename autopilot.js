@@ -16,12 +16,15 @@ function pickUpPassenger(car) {
 }
 
 function getDestination(car) {
-  if (car.city == 'Toronto')
-    return 'Mississauga';
-  else if (car.city == 'Mississauga')
-    return 'London';
-  else if (car.city == 'London')
-    return 'Toronto';
+  if (car.city == 'Toronto') {
+    return 'Mississauga'
+  }
+  else if (car.city == 'Mississauga') {
+    return 'London'
+  }
+  else if (car.city == 'London') {
+    return 'Toronto'
+  }
 }
 
 function fillUpGas(car) {
@@ -35,8 +38,9 @@ function getGasDisplay(gasAmount) {
 }
 
 function drive(car, cityDistance) {
-  if (car.gas < cityDistance)
-    fillUpGas(car);
+  if (car.gas < cityDistance) {
+    fillUpGas(car)
+  }
   car.city = getDestination(car);
   car.gas -= cityDistance;
   console.log('Drove to ' + car.city + '. Remaining gas: ' + getGasDisplay(car.gas) + '.')
@@ -51,14 +55,15 @@ function dropOffPassengers(car) {
 function act(car) {
   var distanceBetweenCities = 50
 
-  if (car.gas < 20)
-    fillUpGas(car);
-
-  else if (car.passengers < 3)
-    pickUpPassenger(car);
-
-  else if (car.gas < distanceBetweenCities)
-    fillUpGas(car);
+  if (car.gas < 20) {
+    fillUpGas(car)
+  }
+  else if (car.passengers < 3) {
+    pickUpPassenger(car)
+  }
+  else if (car.gas < distanceBetweenCities) {
+    fillUpGas(car)
+  }
 
   droveTo = drive(car, distanceBetweenCities);
   passengersDropped = dropOffPassengers(car);
