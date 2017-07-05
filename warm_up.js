@@ -90,8 +90,11 @@ for (height = 3; height <= 15; height++) {
 // containers.each do |container|
 //   puts container
 // end
+var containers = ['purse', 'wallet', 'backback'];
 
-
+for (container = 0; container <= containers.length; container++) {
+  console.log(containers[container]);
+}
 
 //------------------------------------------------------------------------------
 // def hello_world
@@ -99,7 +102,10 @@ for (height = 3; height <= 15; height++) {
 // end
 //
 // hello_world
-
+function helloWorld() {
+  console.log('Hello world!');
+}
+helloWorld()
 
 
 //------------------------------------------------------------------------------
