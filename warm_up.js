@@ -7,6 +7,8 @@
 var amount_of_apples = 14
 console.log("I have " + amount_of_apples + " apples.");
 
+
+
 // materials = ['wood', 'metal', 'stone']
 // words = {
 //   'elephant' => "The world's largest land mammal.",
@@ -20,6 +22,8 @@ var words = {
   iceCream: "A delicious milk-based dessert."
 }
 
+
+
 // num = 16
 // if num > 10
 //   puts "#{num} is greater than 10."
@@ -28,12 +32,23 @@ var words = {
 // else
 //   puts "#{num} must be less than 10."
 // end
+var num = 16
+if (num > 10)
+  console.log(num + " is greater than 10.");
+else if (num == 10)
+  console.log(num + " is exactly 10.");
+else
+  console.log(num + " must be less than 10.");
 
 
 
 // 10.times do
 //   puts "Doing the same thing over and over."
 // end
+for (var i = 1; i < 11; i++) {
+  console.log('Doing the same thing over and over. (' + [i] + ' times now)')
+}
+// I chose 1-11 over 0-10 for output readability -Mike
 
 
 
@@ -41,6 +56,7 @@ var words = {
 // 20.times do |num|
 //   puts num + base
 // end
+
 
 
 
