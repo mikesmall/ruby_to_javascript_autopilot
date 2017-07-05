@@ -17,13 +17,13 @@ function pickUpPassenger(car) {
 
 function getDestination(car) {
   if (car.city == 'Toronto') {
-    return 'Mississauga'
+    return 'Mississauga';
   }
   else if (car.city == 'Mississauga') {
-    return 'London'
+    return 'London';
   }
   else if (car.city == 'London') {
-    return 'Toronto'
+    return 'Toronto';
   }
 }
 
@@ -39,7 +39,7 @@ function getGasDisplay(gasAmount) {
 
 function drive(car, cityDistance) {
   if (car.gas < cityDistance) {
-    fillUpGas(car)
+    fillUpGas(car);
   }
   car.city = getDestination(car);
   car.gas -= cityDistance;
@@ -56,13 +56,13 @@ function act(car) {
   var distanceBetweenCities = 50
 
   if (car.gas < 20) {
-    fillUpGas(car)
+    fillUpGas(car);
   }
   else if (car.passengers < 3) {
-    pickUpPassenger(car)
+    pickUpPassenger(car);
   }
   else if (car.gas < distanceBetweenCities) {
-    fillUpGas(car)
+    fillUpGas(car);
   }
 
   droveTo = drive(car, distanceBetweenCities);
